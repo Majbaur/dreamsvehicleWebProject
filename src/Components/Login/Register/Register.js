@@ -3,9 +3,9 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import './Register.css';
 import SocialLogin from '../SocialLogin/SocialLogin';
-import useToken from './../../../Hooks/useToken';
 import auth from './../../../firebase.init';
 import Loading from './../../Loading/Loading';
+import useToken from './../../../hooks/useToken';
 
 const Register = () => {
     const [agree, setAgree] = useState(false);

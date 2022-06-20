@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "dreamsvehicle-54dec"
-  }
+    "default": "dreamsvehicle",
+    "y": "dreamsvehicle"
+  },
+  "targets": {}
 }

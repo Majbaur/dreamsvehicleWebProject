@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './UserProduct.css'
 import { Button } from 'react-bootstrap';
-import GetProducts from './../../../Hooks/GetProducts';
 
 const UserProduct = ({addItem}) => {
     
@@ -13,7 +12,7 @@ const UserProduct = ({addItem}) => {
     const handleDelete = id =>{
         const proceed = window.confirm('Are you sure?');
         if(proceed){
-            const url = `http://localhost:5000/addedItem/${id}`;
+            const url = `https://desolate-gorge-07687.herokuapp.com/addedItem/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

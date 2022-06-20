@@ -1,8 +1,16 @@
 import React from 'react';
+import Inventories from '../../Products/Inventories/Inventories';
+import Banner from '../Banner/Banner';
+import ArrivalProduct from './../../ArrivalProduct/ArrivalProduct';
+import UserComments from './../../UserComments/UserComments';
+
 const Home = () => {
     return (
         <div>
-            <h2>This is home</h2>
+            <Banner></Banner>
+            <Inventories></Inventories>
+            <ArrivalProduct></ArrivalProduct>
+            <UserComments></UserComments>
         </div>
     );
 };

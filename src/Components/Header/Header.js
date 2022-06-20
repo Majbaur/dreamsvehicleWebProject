@@ -19,6 +19,7 @@ const Header = () =>
 
     const addItemLink = <Nav.Link style={{color:'black'}} as={Link} to='/addItem'>Add Item</Nav.Link>
     const myItemsLink = <Nav.Link style={{color:'black'}} as={Link} to='/myitems'>My Items</Nav.Link>
+    const manageItemsLink = <Nav.Link style={{color:'black'}} as={Link} to='/manageInventories'>Manage Items</Nav.Link>
 
     return (
         <div className='header'>
@@ -32,7 +33,10 @@ const Header = () =>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
                             <Nav.Link style={{color:'black'}} as={Link} to='/home'>Home</Nav.Link>
-                            
+                            <Nav.Link style={{color:'black'}} as={Link} to="/blog">Blog</Nav.Link>
+                            {
+                                user ? manageItemsLink: null
+                            }
 
                             {
                                 user ? addItemLink : null

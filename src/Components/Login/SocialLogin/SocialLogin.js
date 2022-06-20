@@ -3,9 +3,9 @@ import google from '../../../images/google.png';
 import github from '../../../images/github.png';
 import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
-import useToken from './../../../Hooks/useToken';
 import Loading from './../../Loading/Loading';
 import auth from './../../../firebase.init';
+import useToken from './../../hooks/useToken';
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
